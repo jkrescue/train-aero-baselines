@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv*/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# Local configuration and outputs
+.env
+workdir/
+outputs/
+release_assets/
+
+# Large artefacts are published as release assets, not in git
+*.mdlus
+*.pt
+*.vtp
+!data/sample/**
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
