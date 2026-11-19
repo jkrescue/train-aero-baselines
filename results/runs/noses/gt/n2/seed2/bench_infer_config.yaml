@@ -1,0 +1,96 @@
+precision: float32
+profile: false
+augment: false
+benchmark_io: false
+measure_weighted: false
+training:
+  seed: 2
+  save_interval: 25
+  loss_type: huber
+  mask_nonfinite_targets: false
+  batch_size: 1
+  scheduler_update_mode: epoch
+  optimizer:
+    weight_decay: 0.0001
+    betas:
+    - 0.9
+    - 0.999
+    eps: 1.0e-08
+  scheduler: null
+dataloader:
+  prefetch_factor: 4
+  num_streams: 4
+  use_streams: true
+  num_workers: 4
+  pin_memory: true
+domain_parallelism:
+  domain_size: 1
+  auto_shard_size: 10000
+  placements: {}
+logging:
+  log_every_n_steps: 10
+input_type: tensors
+output_type: tensors
+forward_kwargs:
+  geometry: interior.points
+  local_embedding:
+  - interior.points
+  - boundaries.vehicle.cell_data.normals
+  local_positions: interior.points
+  global_embedding: global_data.U_hat
+model:
+  _target_: physicsnemo.models.geotransolver.GeoTransolver
+  out_dim: ${out_dim}
+  functional_dim: 6
+  geometry_dim: 3
+  global_dim: 3
+  n_layers: 12
+  n_hidden: 256
+  dropout: 0.0
+  n_head: 8
+  act: gelu
+  mlp_ratio: 4
+  slice_num: 256
+  use_te: false
+  plus: false
+  include_local_features: false
+  radii:
+  - 0.1
+  - 0.5
+  - 2.0
+  neighbors_in_radius:
+  - 16
+  - 32
+  - 64
+  n_hidden_local: 32
+  state_mixing_mode: weighted
+  activation_checkpointing: false
+  checkpointing_ratio: 1.0
+  activation_checkpointing_components:
+  - blocks
+dataset: ev_n2_orig
+infer_split: test
+train_split: train
+val_split: ${infer_split}
+checkpoint_dir: ${TRAIN_AERO_WORKDIR}/runs/noses/gt/n2/seed2
+run_id: train
+checkpoint_path: null
+output_dir: ${TRAIN_AERO_WORKDIR}/runs/noses/gt/n2/seed2/infer
+redimensionalize: true
+rescale_geometry: false
+compile: false
+sampling_resolution: 10000000
+metrics:
+- l2
+force_coefficients:
+  enabled: true
+  reference_area: 11.0888
+  reference_length: null
+  moment_center:
+  - 0.0
+  - 0.0
+  - 0.0
+  up_direction:
+  - 0.0
+  - 0.0
+  - 1.0

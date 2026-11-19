@@ -1,0 +1,4 @@
+{"fold": "n5", "family": "noses", "model": "abupt", "config": "ev_ab_upt", "seed": 0, "tag": "-",
+ "overrides": "", "gpu": 1, "physicsnemo_commit": "fb5b9a2",
+ "train_rc": 0, "infer_rc": 0, "train_seconds": 9794, "infer_seconds": 10, "peak_train_mem": "Mem: 18.89GB",
+ "finished": "2026-11-19T15:40:29+08:00"}

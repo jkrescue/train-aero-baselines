@@ -1,0 +1,4 @@
+{"fold": "l2", "family": "lengths", "model": "smart", "config": "ev_smart_lengths", "seed": 1, "tag": "-",
+ "overrides": "", "gpu": 0, "physicsnemo_commit": "fb5b9a2",
+ "train_rc": 0, "infer_rc": 0, "train_seconds": 1692, "infer_seconds": 8, "peak_train_mem": "Mem: 10.50GB",
+ "finished": "2026-11-19T15:54:45+08:00"}

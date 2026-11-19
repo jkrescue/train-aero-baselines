@@ -1,0 +1,4 @@
+{"fold": "n2", "family": "noses", "model": "gt", "config": "ev_geotransolver", "seed": 0, "tag": "pts64k",
+ "overrides": "RES=64000", "gpu": 0, "physicsnemo_commit": "fb5b9a2",
+ "train_rc": 0, "infer_rc": 0, "train_seconds": 3469, "infer_seconds": 9, "peak_train_mem": "Mem: 34.07GB",
+ "finished": "2026-11-19T17:52:54+08:00"}

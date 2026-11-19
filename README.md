@@ -10,28 +10,31 @@ trained with the official [PhysicsNeMo](https://github.com/NVIDIA/physicsnemo) e
 recipe and evaluated with the official
 [PhysicsNeMo-CFD](https://github.com/NVIDIA/physicsnemo-cfd) benchmark pipeline.
 
-> **Status:** interim results, 7 of 8 folds complete. Seed-noise and sensitivity runs are
-> still in progress; checkpoints will be attached to the release with the final results.
-> See the [report](docs/report.md) (Chinese).
+Full report (Chinese): [`docs/report.md`](docs/report.md). Checkpoints of all 47 runs:
+[release v0.1.0](https://github.com/jkrescue/train-aero-baselines/releases/tag/v0.1.0).
 
 ## Key results
 
-Leave-geometry-out cross-validation, seed 0, mean over folds. Cp: relative L2 on every surface
-cell. C_Mx,lee: EN 14067-6 lee-rail overturning moment, |error| / truth span over the yaw sweep.
+Leave-geometry-out cross-validation over 8 folds, seed 0, mean over folds. Cp: relative L2 on
+every surface cell. C_Mx,lee: EN 14067-6 lee-rail overturning moment, |error| / truth span over
+the yaw sweep.
 
 | | GeoTransolver | SMART | AB-UPT |
 |---|---|---|---|
-| Cp, nose family (4 folds) | 0.167 | **0.164** | 0.204 |
+| Cp, nose family (5 folds) | 0.157 | **0.154** | 0.191 |
 | Cp, length family (3 folds) | 0.161 | **0.160** | 0.664 |
-| C_Mx,lee, nose family | 4.9 % | **2.4 %** | 6.3 % |
+| C_Mx,lee, nose family | 4.2 % | **3.0 %** | 5.5 % |
 | C_Mx,lee, length family | **3.8 %** | 7.9 % | 74.6 % |
-| Parameters / training time (nose, 300 epochs) | 9.05 M / 30 min | 29.45 M / 43 min | 6.01 M / 142 min |
+| Cp seed noise (sd over 3 seeds, folds n2 / l2) | 0.007 / 0.003 | 0.007 / 0.006 | — |
+| Parameters / training time (nose, 300 epochs) | 9.05 M / 31 min | 29.45 M / 44 min | 6.01 M / 146 min |
 
-- **AB-UPT is not recommended**: worse Cp on every fold, and it fails on unseen train lengths.
-- **GeoTransolver and SMART** have indistinguishable field accuracy (paired t = −0.3 / −0.5).
-  SMART predicts the overturning moment better across nose shapes, GeoTransolver across lengths.
-- **Single choice: GeoTransolver**, the fastest and most balanced across both families;
-  keep SMART as a second baseline for nose-shape and crosswind studies.
+- **AB-UPT is not recommended**: worse Cp on all 8 folds (about 5× the seed noise on the nose
+  family) and it fails on unseen train lengths.
+- **GeoTransolver and SMART are indistinguishable**: their Cp differences (0.003 / 0.001) are
+  well below seed noise, and the overturning-moment differences seen with seed 0 do not hold
+  across seeds (the same model and fold ranges from 1.1 % to 15.0 %).
+- **Recommended baseline: GeoTransolver**, equally accurate, fastest to train and a third of
+  SMART's parameters; keep SMART (lower memory) as a second baseline.
 
 <p align="center">
   <img src="results/figures/l1/GeoTransolver_seed0_l1_design_trend.png" width="32%" alt="GeoTransolver, fold l1">

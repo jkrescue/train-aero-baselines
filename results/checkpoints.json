@@ -49,6 +49,20 @@
   "sha256": "6140b45a57a10925f1f34142e9653b896287b21b2df77baa7ff94bf4f1509bd3"
  },
  {
+  "asset": "lengths-gt-l2-seed1.mdlus",
+  "run": "lengths/gt/l2/seed1",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "93b2f4459134b905b17b0475aadea4066d3207ce1db6e37290065827d0a1651c"
+ },
+ {
+  "asset": "lengths-gt-l2-seed2.mdlus",
+  "run": "lengths/gt/l2/seed2",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "d5c972e4497febd7a0c77a10944c1beb3592128906b99086d66dba3c8156b38d"
+ },
+ {
   "asset": "lengths-gt-l3-seed0.mdlus",
   "run": "lengths/gt/l3/seed0",
   "model_class": "GeoTransolver",
@@ -68,6 +82,20 @@
   "model_class": "SMART",
   "bytes": 117877366,
   "sha256": "ed550fb5a95c65c7ec3e3f0e46935ad7d872c99b7c0b0f28ca3dacc1c138c674"
+ },
+ {
+  "asset": "lengths-smart-l2-seed1.mdlus",
+  "run": "lengths/smart/l2/seed1",
+  "model_class": "SMART",
+  "bytes": 117877366,
+  "sha256": "9323bb76b2a1848ad53bc596ee00a5c6742b7fb566fe8df6890bee7e76bcd231"
+ },
+ {
+  "asset": "lengths-smart-l2-seed2.mdlus",
+  "run": "lengths/smart/l2/seed2",
+  "model_class": "SMART",
+  "bytes": 117877366,
+  "sha256": "cb2c9cfbfc9df15826e406afd5a852669748c0f5f5e4c5096c3d1644c0b1d196"
  },
  {
   "asset": "lengths-smart-l3-seed0.mdlus",
@@ -126,6 +154,13 @@
   "sha256": "a0a6596ac838df756a7c26ab120a7440414dda5ef62e291fcb636b69487e39af"
  },
  {
+  "asset": "noses-abupt-n5-seed0.mdlus",
+  "run": "noses/abupt/n5/seed0",
+  "model_class": "ABUPT",
+  "bytes": 24110122,
+  "sha256": "bd5633b161bf7bda8b5e844f8e8744174129d5f856a79a1d3aa5778857060bc9"
+ },
+ {
   "asset": "noses-gt-n1-seed0.mdlus",
   "run": "noses/gt/n1/seed0",
   "model_class": "GeoTransolver",
@@ -138,6 +173,13 @@
   "model_class": "GeoTransolver",
   "bytes": 36300320,
   "sha256": "d742f13282e95847b68da6e24cfe8741f3e648e8ebe77d27529a9ad905d45493"
+ },
+ {
+  "asset": "noses-gt-n2-seed0__areaw.mdlus",
+  "run": "noses/gt/n2/seed0__areaw",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "c1b8a368cdfb690e532bc8700db072d1dd3c7cd9a803f74888e8c14c694efb0f"
  },
  {
   "asset": "noses-gt-n2-seed0__lr1e-2.mdlus",
@@ -154,11 +196,32 @@
   "sha256": "a747bbcf951c3bb354cb4d2c62fb09c27ce8e490ff1eb5c936d587a665d46082"
  },
  {
+  "asset": "noses-gt-n2-seed0__pts16k.mdlus",
+  "run": "noses/gt/n2/seed0__pts16k",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "037c2cb2b7e0edbcbc52f62dfec5c3a520f70505e3e0772d3a65091fa1f373a0"
+ },
+ {
+  "asset": "noses-gt-n2-seed0__pts64k.mdlus",
+  "run": "noses/gt/n2/seed0__pts64k",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "865f35813f48bd4139708f277772e3f7b951d2652c88f58483e31b0d7f67f8bd"
+ },
+ {
   "asset": "noses-gt-n2-seed1.mdlus",
   "run": "noses/gt/n2/seed1",
   "model_class": "GeoTransolver",
   "bytes": 36300320,
   "sha256": "5d00e70f494d09c57d4a724a205b50db3e3379bf693b5af4b39cb3ba397f6faa"
+ },
+ {
+  "asset": "noses-gt-n2-seed2.mdlus",
+  "run": "noses/gt/n2/seed2",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "74c400b02c5b7c4fd5f84a308baaf97c4563c49ec14756cfb6609632b4b1d55e"
  },
  {
   "asset": "noses-gt-n3-seed0.mdlus",
@@ -196,6 +259,13 @@
   "sha256": "c3e1e6140fa360eea85fcf10b6c4c4654439a7a7018a76dc775d19b1b902101a"
  },
  {
+  "asset": "noses-smart-n2-seed0__areaw.mdlus",
+  "run": "noses/smart/n2/seed0__areaw",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "e6a84b747ec3f2c78df773af734b3c045c6f7d89d59b0d83ffa0970f652544cd"
+ },
+ {
   "asset": "noses-smart-n2-seed0__lr3e-3.mdlus",
   "run": "noses/smart/n2/seed0__lr3e-3",
   "model_class": "SMART",
@@ -208,6 +278,34 @@
   "model_class": "SMART",
   "bytes": 117877368,
   "sha256": "395b82cedf8e3caddfe9a5569a6106d6587dff75a4e5d7fa2641fe66012d5908"
+ },
+ {
+  "asset": "noses-smart-n2-seed0__pts16k.mdlus",
+  "run": "noses/smart/n2/seed0__pts16k",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "a3c01284b0d73504c3199ebb8a767a47cd1f8eef0c656f423ab962319edeb38c"
+ },
+ {
+  "asset": "noses-smart-n2-seed0__pts64k.mdlus",
+  "run": "noses/smart/n2/seed0__pts64k",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "a49c200b4f2ae7b209a912f3b46235d979ff7413845dada5c4a6d6acb66e1d7c"
+ },
+ {
+  "asset": "noses-smart-n2-seed1.mdlus",
+  "run": "noses/smart/n2/seed1",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "c9a5c78fa85455ffa5fce5e5da69bf646952fe03a47fc539bfc11d2f07bcdacf"
+ },
+ {
+  "asset": "noses-smart-n2-seed2.mdlus",
+  "run": "noses/smart/n2/seed2",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "372994cad20b68846b68a98c87118cbe435ef34eb848fa622531d5297ea8cae2"
  },
  {
   "asset": "noses-smart-n3-seed0.mdlus",
