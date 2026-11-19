@@ -1,0 +1,331 @@
+[
+ {
+  "asset": "lengths-abupt-l1-seed0.mdlus",
+  "run": "lengths/abupt/l1/seed0",
+  "model_class": "ABUPT",
+  "bytes": 24110122,
+  "sha256": "482e87f403f52c7af3306486130b997c612be92c3db36279f2341da2360cf02f"
+ },
+ {
+  "asset": "lengths-abupt-l1-seed0__centered.mdlus",
+  "run": "lengths/abupt/l1/seed0__centered",
+  "model_class": "ABUPT",
+  "bytes": 24110122,
+  "sha256": "ac9593cad0db78041cd4e72da7ac46912389c080d0456e184adb685f727d1b40"
+ },
+ {
+  "asset": "lengths-abupt-l2-seed0.mdlus",
+  "run": "lengths/abupt/l2/seed0",
+  "model_class": "ABUPT",
+  "bytes": 24110122,
+  "sha256": "960305aa422e323c0b0c1fed1c75f5a922c26595c7ad39ef8e797c73ff12dc4d"
+ },
+ {
+  "asset": "lengths-abupt-l2-seed0__centered.mdlus",
+  "run": "lengths/abupt/l2/seed0__centered",
+  "model_class": "ABUPT",
+  "bytes": 24110122,
+  "sha256": "2eca0ab89f5b3d1a86c5559969691ff6cdc676a03154c171eb2a9ce91efc2ed1"
+ },
+ {
+  "asset": "lengths-abupt-l3-seed0.mdlus",
+  "run": "lengths/abupt/l3/seed0",
+  "model_class": "ABUPT",
+  "bytes": 24110122,
+  "sha256": "13a1caea9fbe354d7732b72ea4caf8037c88eed4977c4aa6f2f73a6b5fcff558"
+ },
+ {
+  "asset": "lengths-gt-l1-seed0.mdlus",
+  "run": "lengths/gt/l1/seed0",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "399dd8fb563670a03ee665029dc85fa3bee108e798d07382554c2aeb0a8e5ca4"
+ },
+ {
+  "asset": "lengths-gt-l2-seed0.mdlus",
+  "run": "lengths/gt/l2/seed0",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "6140b45a57a10925f1f34142e9653b896287b21b2df77baa7ff94bf4f1509bd3"
+ },
+ {
+  "asset": "lengths-gt-l2-seed1.mdlus",
+  "run": "lengths/gt/l2/seed1",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "93b2f4459134b905b17b0475aadea4066d3207ce1db6e37290065827d0a1651c"
+ },
+ {
+  "asset": "lengths-gt-l2-seed2.mdlus",
+  "run": "lengths/gt/l2/seed2",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "d5c972e4497febd7a0c77a10944c1beb3592128906b99086d66dba3c8156b38d"
+ },
+ {
+  "asset": "lengths-gt-l3-seed0.mdlus",
+  "run": "lengths/gt/l3/seed0",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "dd43134eaf3ff42119775ccb804ab7fa16edd9107c6270ba22fe41767516b445"
+ },
+ {
+  "asset": "lengths-smart-l1-seed0.mdlus",
+  "run": "lengths/smart/l1/seed0",
+  "model_class": "SMART",
+  "bytes": 117877366,
+  "sha256": "82b9f357394adfb6eed8551f9dcbd08745e96721d46e2caf2190258ea8d3ff4d"
+ },
+ {
+  "asset": "lengths-smart-l2-seed0.mdlus",
+  "run": "lengths/smart/l2/seed0",
+  "model_class": "SMART",
+  "bytes": 117877366,
+  "sha256": "ed550fb5a95c65c7ec3e3f0e46935ad7d872c99b7c0b0f28ca3dacc1c138c674"
+ },
+ {
+  "asset": "lengths-smart-l2-seed1.mdlus",
+  "run": "lengths/smart/l2/seed1",
+  "model_class": "SMART",
+  "bytes": 117877366,
+  "sha256": "9323bb76b2a1848ad53bc596ee00a5c6742b7fb566fe8df6890bee7e76bcd231"
+ },
+ {
+  "asset": "lengths-smart-l2-seed2.mdlus",
+  "run": "lengths/smart/l2/seed2",
+  "model_class": "SMART",
+  "bytes": 117877366,
+  "sha256": "cb2c9cfbfc9df15826e406afd5a852669748c0f5f5e4c5096c3d1644c0b1d196"
+ },
+ {
+  "asset": "lengths-smart-l3-seed0.mdlus",
+  "run": "lengths/smart/l3/seed0",
+  "model_class": "SMART",
+  "bytes": 117877366,
+  "sha256": "90588d8e14b260f99a55e3fe3b7899acf5647422d9f40f93e4dfc96856adc775"
+ },
+ {
+  "asset": "noses-abupt-n1-seed0.mdlus",
+  "run": "noses/abupt/n1/seed0",
+  "model_class": "ABUPT",
+  "bytes": 24110122,
+  "sha256": "b4bf94c678be81956103a476bb3c5f48b8deb5fdbb1bc3c42a7238d09d0b9a3e"
+ },
+ {
+  "asset": "noses-abupt-n2-seed0.mdlus",
+  "run": "noses/abupt/n2/seed0",
+  "model_class": "ABUPT",
+  "bytes": 24110122,
+  "sha256": "55c963d5b7c4518d14b24aa96d43760e7d58771d7fef300fe20d22ee5cf1290b"
+ },
+ {
+  "asset": "noses-abupt-n2-seed0__centered.mdlus",
+  "run": "noses/abupt/n2/seed0__centered",
+  "model_class": "ABUPT",
+  "bytes": 24110122,
+  "sha256": "993f26bcc2c31b406d4268a852494d9c0c84a70a179e0a5364436162e2bf418a"
+ },
+ {
+  "asset": "noses-abupt-n2-seed0__lr3e-4.mdlus",
+  "run": "noses/abupt/n2/seed0__lr3e-4",
+  "model_class": "ABUPT",
+  "bytes": 24110122,
+  "sha256": "d780fbdffb3d6d7c47ebb304eab2489c75abb1a0ca7495542cb96f97190a1b3c"
+ },
+ {
+  "asset": "noses-abupt-n2-seed0__lr3e-5.mdlus",
+  "run": "noses/abupt/n2/seed0__lr3e-5",
+  "model_class": "ABUPT",
+  "bytes": 24110122,
+  "sha256": "a1bd8363f327c465629911f5746d2bbf3a13acf4c8df2295cf7da32d343cc518"
+ },
+ {
+  "asset": "noses-abupt-n3-seed0.mdlus",
+  "run": "noses/abupt/n3/seed0",
+  "model_class": "ABUPT",
+  "bytes": 24110122,
+  "sha256": "9427ed26b786b7c95f833a77dc92b90d88072929fddcfa8af14efad4e897a9d9"
+ },
+ {
+  "asset": "noses-abupt-n4-seed0.mdlus",
+  "run": "noses/abupt/n4/seed0",
+  "model_class": "ABUPT",
+  "bytes": 24110122,
+  "sha256": "a0a6596ac838df756a7c26ab120a7440414dda5ef62e291fcb636b69487e39af"
+ },
+ {
+  "asset": "noses-abupt-n5-seed0.mdlus",
+  "run": "noses/abupt/n5/seed0",
+  "model_class": "ABUPT",
+  "bytes": 24110122,
+  "sha256": "bd5633b161bf7bda8b5e844f8e8744174129d5f856a79a1d3aa5778857060bc9"
+ },
+ {
+  "asset": "noses-gt-n1-seed0.mdlus",
+  "run": "noses/gt/n1/seed0",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "4e4d734977c30ba014f8c655fee0b683e537d8ef2885f7bae855d4d0ee90f992"
+ },
+ {
+  "asset": "noses-gt-n2-seed0.mdlus",
+  "run": "noses/gt/n2/seed0",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "d742f13282e95847b68da6e24cfe8741f3e648e8ebe77d27529a9ad905d45493"
+ },
+ {
+  "asset": "noses-gt-n2-seed0__areaw.mdlus",
+  "run": "noses/gt/n2/seed0__areaw",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "c1b8a368cdfb690e532bc8700db072d1dd3c7cd9a803f74888e8c14c694efb0f"
+ },
+ {
+  "asset": "noses-gt-n2-seed0__lr1e-2.mdlus",
+  "run": "noses/gt/n2/seed0__lr1e-2",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "f7aab731ebdd2aa8530d89fd40fe16c2ba8437adff042e3bbee4bddc830ab965"
+ },
+ {
+  "asset": "noses-gt-n2-seed0__lr1e-3.mdlus",
+  "run": "noses/gt/n2/seed0__lr1e-3",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "a747bbcf951c3bb354cb4d2c62fb09c27ce8e490ff1eb5c936d587a665d46082"
+ },
+ {
+  "asset": "noses-gt-n2-seed0__pts16k.mdlus",
+  "run": "noses/gt/n2/seed0__pts16k",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "037c2cb2b7e0edbcbc52f62dfec5c3a520f70505e3e0772d3a65091fa1f373a0"
+ },
+ {
+  "asset": "noses-gt-n2-seed0__pts64k.mdlus",
+  "run": "noses/gt/n2/seed0__pts64k",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "865f35813f48bd4139708f277772e3f7b951d2652c88f58483e31b0d7f67f8bd"
+ },
+ {
+  "asset": "noses-gt-n2-seed1.mdlus",
+  "run": "noses/gt/n2/seed1",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "5d00e70f494d09c57d4a724a205b50db3e3379bf693b5af4b39cb3ba397f6faa"
+ },
+ {
+  "asset": "noses-gt-n2-seed2.mdlus",
+  "run": "noses/gt/n2/seed2",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "74c400b02c5b7c4fd5f84a308baaf97c4563c49ec14756cfb6609632b4b1d55e"
+ },
+ {
+  "asset": "noses-gt-n3-seed0.mdlus",
+  "run": "noses/gt/n3/seed0",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "01e6632e213175b453937d943a173480c1b749d9b23de52838873de8233a80db"
+ },
+ {
+  "asset": "noses-gt-n4-seed0.mdlus",
+  "run": "noses/gt/n4/seed0",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "9a4ab88d7d22751ede72b71cc073df37395fc63a0406c855fefc49d0d8fd0cfa"
+ },
+ {
+  "asset": "noses-gt-n5-seed0.mdlus",
+  "run": "noses/gt/n5/seed0",
+  "model_class": "GeoTransolver",
+  "bytes": 36300320,
+  "sha256": "60d5c9bde9cfd228a6e8737c71127b91fc45f6f20622d6f24cfbec2f50cb6d17"
+ },
+ {
+  "asset": "noses-smart-n1-seed0.mdlus",
+  "run": "noses/smart/n1/seed0",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "f23520845d02a3c9550e6a1f6608a3f8883a9df2f528cca0db25e21950b6e4f2"
+ },
+ {
+  "asset": "noses-smart-n2-seed0.mdlus",
+  "run": "noses/smart/n2/seed0",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "c3e1e6140fa360eea85fcf10b6c4c4654439a7a7018a76dc775d19b1b902101a"
+ },
+ {
+  "asset": "noses-smart-n2-seed0__areaw.mdlus",
+  "run": "noses/smart/n2/seed0__areaw",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "e6a84b747ec3f2c78df773af734b3c045c6f7d89d59b0d83ffa0970f652544cd"
+ },
+ {
+  "asset": "noses-smart-n2-seed0__lr3e-3.mdlus",
+  "run": "noses/smart/n2/seed0__lr3e-3",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "04c80658257e186c3c5653c45f51dfe7f66029f7447f29f6408cb3aac6e9a343"
+ },
+ {
+  "asset": "noses-smart-n2-seed0__lr3e-4.mdlus",
+  "run": "noses/smart/n2/seed0__lr3e-4",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "395b82cedf8e3caddfe9a5569a6106d6587dff75a4e5d7fa2641fe66012d5908"
+ },
+ {
+  "asset": "noses-smart-n2-seed0__pts16k.mdlus",
+  "run": "noses/smart/n2/seed0__pts16k",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "a3c01284b0d73504c3199ebb8a767a47cd1f8eef0c656f423ab962319edeb38c"
+ },
+ {
+  "asset": "noses-smart-n2-seed0__pts64k.mdlus",
+  "run": "noses/smart/n2/seed0__pts64k",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "a49c200b4f2ae7b209a912f3b46235d979ff7413845dada5c4a6d6acb66e1d7c"
+ },
+ {
+  "asset": "noses-smart-n2-seed1.mdlus",
+  "run": "noses/smart/n2/seed1",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "c9a5c78fa85455ffa5fce5e5da69bf646952fe03a47fc539bfc11d2f07bcdacf"
+ },
+ {
+  "asset": "noses-smart-n2-seed2.mdlus",
+  "run": "noses/smart/n2/seed2",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "372994cad20b68846b68a98c87118cbe435ef34eb848fa622531d5297ea8cae2"
+ },
+ {
+  "asset": "noses-smart-n3-seed0.mdlus",
+  "run": "noses/smart/n3/seed0",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "803082304ab10fc6ed4038d5cc51eacab7fae8761f18583b3c4b04c2e1d42b3e"
+ },
+ {
+  "asset": "noses-smart-n4-seed0.mdlus",
+  "run": "noses/smart/n4/seed0",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "687bd401bdb49ccc59b2654396cfb93174c9e1b7c6332a9cdf34edcbcfd85954"
+ },
+ {
+  "asset": "noses-smart-n5-seed0.mdlus",
+  "run": "noses/smart/n5/seed0",
+  "model_class": "SMART",
+  "bytes": 117877368,
+  "sha256": "1809bb1abc7429c106ba45848cdaec56cf99bb632d425d735eee47e6e316066c"
+ }
+]

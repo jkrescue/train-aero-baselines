@@ -1,0 +1,86 @@
+{
+ "n1": {
+  "family": "noses",
+  "test_geometries": [
+   "nose_k060_ap00",
+   "nose_k100_am25"
+  ],
+  "n_train": 20,
+  "n_val": 1,
+  "n_test": 6,
+  "wss_std": 0.0007959383916162946
+ },
+ "n2": {
+  "family": "noses",
+  "test_geometries": [
+   "nose_k080_ap00",
+   "nose_k100_ap25"
+  ],
+  "n_train": 20,
+  "n_val": 1,
+  "n_test": 6,
+  "wss_std": 0.0007976795969049056
+ },
+ "n3": {
+  "family": "noses",
+  "test_geometries": [
+   "nose_k130_ap00",
+   "nose_k100_am50"
+  ],
+  "n_train": 20,
+  "n_val": 1,
+  "n_test": 6,
+  "wss_std": 0.0007971929481246455
+ },
+ "n4": {
+  "family": "noses",
+  "test_geometries": [
+   "nose_k160_ap00",
+   "nose_k100_ap50"
+  ],
+  "n_train": 20,
+  "n_val": 1,
+  "n_test": 6,
+  "wss_std": 0.0007976749012256199
+ },
+ "n5": {
+  "family": "noses",
+  "test_geometries": [
+   "nose_k100_ap00"
+  ],
+  "n_train": 23,
+  "n_val": 1,
+  "n_test": 3,
+  "wss_std": 0.0007970091377267139
+ },
+ "l1": {
+  "family": "lengths",
+  "test_geometries": [
+   "train_L77"
+  ],
+  "n_train": 13,
+  "n_val": 1,
+  "n_test": 3,
+  "wss_std": 0.0007928360919863086
+ },
+ "l2": {
+  "family": "lengths",
+  "test_geometries": [
+   "train_L127"
+  ],
+  "n_train": 13,
+  "n_val": 1,
+  "n_test": 3,
+  "wss_std": 0.0008030831203786062
+ },
+ "l3": {
+  "family": "lengths",
+  "test_geometries": [
+   "train_L152"
+  ],
+  "n_train": 13,
+  "n_val": 1,
+  "n_test": 3,
+  "wss_std": 0.0008089693174424667
+ }
+}

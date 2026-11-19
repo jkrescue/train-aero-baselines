@@ -1,0 +1,4 @@
+{"fold": "n2", "family": "noses", "model": "gt", "config": "ev_geotransolver", "seed": 0, "tag": "lr1e-3",
+ "overrides": "training.optimizer.lr=1.0e-3", "gpu": 1, "physicsnemo_commit": "fb5b9a2",
+ "train_rc": 0, "infer_rc": 0, "train_seconds": 1812, "infer_seconds": 6, "peak_train_mem": "Mem: 17.34GB",
+ "finished": "2026-11-18T22:12:20+08:00"}

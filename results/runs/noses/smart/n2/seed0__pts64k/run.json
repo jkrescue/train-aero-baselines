@@ -1,0 +1,4 @@
+{"fold": "n2", "family": "noses", "model": "smart", "config": "ev_smart_noses", "seed": 0, "tag": "pts64k",
+ "overrides": "RES=64000", "gpu": 1, "physicsnemo_commit": "fb5b9a2",
+ "train_rc": 0, "infer_rc": 0, "train_seconds": 4307, "infer_seconds": 10, "peak_train_mem": "Mem: 17.62GB",
+ "finished": "2026-11-19T18:41:03+08:00"}

@@ -1,0 +1,4 @@
+{"fold": "l2", "family": "lengths", "model": "abupt", "config": "ev_ab_upt", "seed": 0, "tag": "centered",
+ "overrides": "DS=psc", "gpu": 1, "physicsnemo_commit": "fb5b9a2",
+ "train_rc": 0, "infer_rc": 0, "train_seconds": 5565, "infer_seconds": 10, "peak_train_mem": "Mem: 20.12GB",
+ "finished": "2026-11-19T11:32:39+08:00"}

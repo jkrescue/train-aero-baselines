@@ -1,0 +1,89 @@
+precision: float32
+profile: false
+augment: false
+benchmark_io: false
+measure_weighted: false
+training:
+  seed: 0
+  save_interval: 100
+  loss_type: huber
+  mask_nonfinite_targets: false
+  batch_size: 1
+  scheduler_update_mode: epoch
+  optimizer:
+    weight_decay: 0.0001
+    betas:
+    - 0.9
+    - 0.999
+    eps: 1.0e-08
+    lr: 0.0001
+  scheduler:
+    _target_: torch.optim.lr_scheduler.StepLR
+    step_size: 150
+    gamma: 0.1
+  num_epochs: 300
+dataloader:
+  prefetch_factor: 4
+  num_streams: 4
+  use_streams: true
+  num_workers: 4
+  pin_memory: true
+domain_parallelism:
+  domain_size: 1
+  auto_shard_size: 10000
+  placements: {}
+logging:
+  log_every_n_steps: 10
+dataset: ev_n3_shuf_ps
+extra_datasets: []
+train_split: train
+val_split: val
+sampling_resolution: 32000
+metrics:
+- l2
+run_id: train
+output_dir: ${TRAIN_AERO_WORKDIR}/runs/noses/abupt/n3/seed0
+checkpoint_dir: null
+compile: false
+input_type: tensors
+output_type: tensors
+dataset_reader_overrides:
+  point_sets:
+    geometry:
+      source: vehicle
+      count: 65536
+      stream: 0
+    supernodes:
+      source: geometry
+      count: 16384
+      stream: 1
+    surface_anchors:
+      source: vehicle
+      association: cell_centroids
+      count: 16384
+      stream: 2
+    interior:
+      count: 32000
+forward_kwargs:
+  geometry: boundaries.geometry.points
+  supernodes: boundaries.supernodes.points
+  surface_anchors: boundaries.surface_anchors.points
+  parameters: global_data.U_hat
+  surface_queries: interior.points
+model:
+  _target_: physicsnemo.experimental.models.ab_upt.ABUPT
+  surface_channels: 4
+  volume_channels: 0
+  parameter_channels: 3
+  hidden_dim: 192
+  num_heads: 3
+  num_interaction_blocks: 2
+  num_shared_layers: 1
+  num_decoder_layers: 6
+  pooling_radius: 0.0098
+  pooling_chunk_size: 262144
+  pooling_message_fp32: false
+  query_chunk_size: 32768
+  coordinate_scale: 1000.0
+  radius_search_backend: null
+out_dim: 4

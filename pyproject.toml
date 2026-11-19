@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "train-aero-baselines"
+version = "0.1.0"
+description = "Baseline selection for high-speed-train surface aerodynamics surrogates (GeoTransolver, SMART, AB-UPT) on PhysicsNeMo and the PhysicsNeMo-CFD benchmark."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pyyaml",
+  "scipy",
+  "torch",
+  # nvidia-physicsnemo (recipe commit fb5b9a2) and nvidia-physicsnemo-cfd (43e531a) are
+  # installed from source checkouts, see docs/reproduce.md
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+ignore = ["E731", "SIM108", "SIM118"]  # TensorDict.keys() is not dict iteration
+
+[tool.ruff.lint.isort]
+known-first-party = ["train_aero"]
+known-third-party = ["datasets", "infer", "nondim", "output_normalize", "utils"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["physicsnemo: requires physicsnemo and the sample case"]
