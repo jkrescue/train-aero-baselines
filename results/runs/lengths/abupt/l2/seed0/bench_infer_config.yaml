@@ -1,0 +1,99 @@
+precision: float32
+profile: false
+augment: false
+benchmark_io: false
+measure_weighted: false
+training:
+  seed: 0
+  save_interval: 25
+  loss_type: huber
+  mask_nonfinite_targets: false
+  batch_size: 1
+  scheduler_update_mode: epoch
+  optimizer:
+    weight_decay: 0.0001
+    betas:
+    - 0.9
+    - 0.999
+    eps: 1.0e-08
+    lr: 0.0001
+  scheduler: null
+dataloader:
+  prefetch_factor: 4
+  num_streams: 4
+  use_streams: true
+  num_workers: 4
+  pin_memory: true
+domain_parallelism:
+  domain_size: 1
+  auto_shard_size: 10000
+  placements: {}
+logging:
+  log_every_n_steps: 10
+input_type: tensors
+output_type: tensors
+compile: false
+sampling_resolution: 10000000
+dataset_reader_overrides:
+  point_sets:
+    geometry:
+      source: vehicle
+      count: 65536
+      stream: 0
+    supernodes:
+      source: geometry
+      count: 16384
+      stream: 1
+    surface_anchors:
+      source: vehicle
+      association: cell_centroids
+      count: 16384
+      stream: 2
+    interior:
+      count: ${sampling_resolution}
+forward_kwargs:
+  geometry: boundaries.geometry.points
+  supernodes: boundaries.supernodes.points
+  surface_anchors: boundaries.surface_anchors.points
+  parameters: global_data.U_hat
+  surface_queries: interior.points
+model:
+  _target_: physicsnemo.experimental.models.ab_upt.ABUPT
+  surface_channels: ${out_dim}
+  volume_channels: 0
+  parameter_channels: 3
+  hidden_dim: 192
+  num_heads: 3
+  num_interaction_blocks: 2
+  num_shared_layers: 1
+  num_decoder_layers: 6
+  pooling_radius: 0.0098
+  pooling_chunk_size: 262144
+  pooling_message_fp32: false
+  query_chunk_size: 32768
+  coordinate_scale: 1000.0
+  radius_search_backend: null
+dataset: ev_l2_orig_ps
+infer_split: test
+train_split: train
+val_split: ${infer_split}
+checkpoint_dir: ${TRAIN_AERO_WORKDIR}/runs/lengths/abupt/l2/seed0
+run_id: train
+checkpoint_path: null
+output_dir: ${TRAIN_AERO_WORKDIR}/runs/lengths/abupt/l2/seed0/infer
+redimensionalize: true
+rescale_geometry: false
+metrics:
+- l2
+force_coefficients:
+  enabled: true
+  reference_area: 11.0888
+  reference_length: null
+  moment_center:
+  - 0.0
+  - 0.0
+  - 0.0
+  up_direction:
+  - 0.0
+  - 0.0
+  - 1.0

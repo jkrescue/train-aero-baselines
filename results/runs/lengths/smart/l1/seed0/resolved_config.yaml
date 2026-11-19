@@ -1,0 +1,76 @@
+precision: float32
+profile: false
+augment: false
+benchmark_io: false
+measure_weighted: false
+training:
+  seed: 0
+  save_interval: 100
+  loss_type: mse
+  mask_nonfinite_targets: false
+  batch_size: 1
+  scheduler_update_mode: epoch
+  optimizer:
+    weight_decay: 0.0001
+    betas:
+    - 0.9
+    - 0.999
+    eps: 1.0e-08
+    lr: 0.001
+  scheduler:
+    _target_: torch.optim.lr_scheduler.StepLR
+    step_size: 150
+    gamma: 0.1
+  num_epochs: 300
+dataloader:
+  prefetch_factor: 2
+  num_streams: 2
+  use_streams: true
+  num_workers: 2
+  pin_memory: true
+domain_parallelism:
+  domain_size: 1
+  auto_shard_size: 10000
+  placements: {}
+logging:
+  log_every_n_steps: 10
+dataset: ev_l1_shuf
+extra_datasets: []
+train_split: train
+val_split: val
+sampling_resolution: 32000
+metrics:
+- l2
+run_id: train
+output_dir: ${TRAIN_AERO_WORKDIR}/runs/lengths/smart/l1/seed0
+checkpoint_dir: null
+compile: false
+input_type: tensors
+output_type: tensors
+forward_kwargs:
+  geometry: interior.points
+  queries: interior.points
+  parameters: global_data.U_hat
+  query_features: boundaries.vehicle.cell_data.normals
+model:
+  _target_: physicsnemo.experimental.models.smart.SMART
+  field: surface
+  out_dim: 4
+  query_feature_channels: 3
+  parameter_channels: 3
+  coordinate_scale:
+  - 2.6
+  - 0.1343
+  - 0.1677
+  center_on_geometry: true
+  hidden_dim: 448
+  num_heads: 8
+  num_layers: 6
+  num_latents: 2048
+  geometry_subsample: 16384
+  share_weights: true
+  qk_normalization: true
+  qk_temperature_max: 4.0
+  eval_seed: 0
+  eval_chunk_size: 8192
+out_dim: 4

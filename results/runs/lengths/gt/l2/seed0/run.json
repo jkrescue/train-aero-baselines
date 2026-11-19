@@ -1,0 +1,4 @@
+{"fold": "l2", "family": "lengths", "model": "gt", "config": "ev_geotransolver", "seed": 0, "tag": "-",
+ "overrides": "", "gpu": 0, "physicsnemo_commit": "fb5b9a2",
+ "train_rc": 0, "infer_rc": 0, "train_seconds": 1206, "infer_seconds": 9, "peak_train_mem": "Mem: 17.33GB",
+ "finished": "2026-11-18T22:46:27+08:00"}
